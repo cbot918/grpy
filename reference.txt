@@ -1,0 +1,1 @@
+https://adevait.com/go/transcoding-of-http-json-to-grpc-using-go

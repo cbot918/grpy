@@ -1,0 +1,31 @@
+syntax = "proto3";
+
+package helloworld;
+
+option go_package = "/proto";
+
+import "google/api/annotations.proto";
+import "google/protobuf/timestamp.proto";
+
+service UserService{}
+
+service CreditCardServer{}
+
+message User {
+  uint32 id = 1;
+  string name = 2;
+  string email = 3;
+  string phoneNumber = 4;
+}
+
+message Message {
+  string message = 1;
+}
+
+message ListUser {
+  repeated User users = 1;
+}
+
+message CreditCard {}
+
+message ListCreditCards {}
